@@ -1,0 +1,114 @@
+@media (max-width: 768px) {
+    .header-container{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        text-align: center;
+        align-items: center;
+    }
+
+    .header-btn{
+        padding: 20px 40px;
+    }
+    
+    .header-container .header-left h2{
+        font-size: 25px;
+    }
+
+    .header-container .header-left h1{ 
+        font-size: 37px;
+    }
+    
+
+
+
+    .main-container{
+        flex-direction: column;
+        margin-bottom: 25%;
+    }
+
+    .main-right{
+        text-align: center;
+    }
+
+    .main-container-about-card{
+        flex-direction: column;
+    }
+
+    .about-card{
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .main-midias{
+        display: none;
+    }
+
+
+
+    .main-card-container{
+        margin: 15% 0 60%;  
+    }
+
+    .card{
+        width: 300px;
+    }
+
+
+
+
+
+    .main-container-galeria{
+        margin: 50% 0;
+    }
+
+    .container-galeria{
+        flex-direction: row;
+    }
+
+    .galeria-box{
+        
+        flex: 100%;
+    }
+
+
+    .container-contato{
+        flex-direction: row;
+    }
+
+
+    .contato-left{
+        margin: -130px 0 -200px ;
+    }
+
+
+
+    .footer-container{
+        margin-top: 200px;
+        height: 300px;
+    }
+
+    
+    .footer-midias ul li{
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    .main-container-galeria{
+        margin: 50% 0 90%;
+    }
+    
+    .main-card-container{
+        margin: 140% 0 230%;  
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-container-galeria{
+        margin: 400px 0;
+    }
+}

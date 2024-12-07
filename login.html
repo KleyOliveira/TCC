@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCC</title>
+    <link rel="shortcut icon" href="../Landing-Page/assets/img/Icone.png" type="image/x-icon">
+    <style>
+    @import './Landing-Page/assets/css/style.css';
+
+    body {
+    background-color: var(--bg-main); /* Fundo do site */
+    font-family: Arial, sans-serif;
+    color: var(--color-main); /* Cor dos parágrafos */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: var(--bg-main);
+    padding: 60px 30px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 30px;
+    border: 2px solid var(--bg-btn-links); /* Cor dos links */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--color-main);
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--bg-btn-links); /* Botões principais */
+}
+
+.btn-primary:hover {
+    background-color: var(--bg-btn-links-hover); /* Hover dos botões principais */
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bem-vindo!</h1>
+        <p>Digite seu nome para continuar:</p>
+        <input type="text" id="username" placeholder="Digite seu nome" required>
+        <button onclick="login()" class="btn-primary">Entrar</button>
+    </div>
+    <script defer>
+        function login() {
+    const username = document.getElementById('username').value.trim();
+    if (username) {
+        // Redireciona para a página de destino (landing page) com o nome do usuário como parâmetro na URL
+        window.location.href = `./Landing-Page/index.html?name=${encodeURIComponent(username)}`;
+    } else {
+        alert('Por favor, digite seu nome.');
+    }
+}
+
+    </script>
+</body>
+</html>
